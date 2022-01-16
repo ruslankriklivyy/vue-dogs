@@ -59,7 +59,7 @@ export default Vue.extend({
 
       img {
         display: block;
-        width: 100px;
+        width: 110px;
         height: 125px;
         pointer-events: none;
       }
@@ -81,7 +81,7 @@ export default Vue.extend({
     }
 
     &-link {
-      width: 138px;
+      width: 145px;
       height: 244px;
       text-decoration: none;
       text-transform: uppercase;

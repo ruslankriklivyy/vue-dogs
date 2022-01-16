@@ -109,6 +109,14 @@ body {
   background: #e5e5e5;
 }
 
+.dark {
+  background: #1d1d1d;
+
+  .app__left-title {
+    color: #fff;
+  }
+}
+
 ol,
 ul {
   list-style: none;

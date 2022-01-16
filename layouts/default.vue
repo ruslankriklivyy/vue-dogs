@@ -5,6 +5,7 @@
         <div class="container">
           <header class="app__left-header">
             <nuxt-link to="/"><img src="/logo.svg" alt="logo" /></nuxt-link>
+            <toggle-theme />
           </header>
           <div class="app__left-top">
             <h2 class="app__left-title">Hi there!</h2>
@@ -25,13 +26,14 @@
 <script lang="ts">
 import Vue from "vue";
 import Navigation from "~/components/navigation/index.vue";
+import ToggleTheme from "~/components/ToggleTheme.vue";
 
 export default Vue.extend({
-  components: { Navigation },
+  components: { Navigation, ToggleTheme },
 });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "~/styles/colors.scss";
 
 .app {
@@ -41,6 +43,10 @@ export default Vue.extend({
     width: 50%;
 
     &-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       padding-top: 30px;
       margin-bottom: 80px;
     }
