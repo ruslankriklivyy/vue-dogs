@@ -1,8 +1,12 @@
 <template>
   <li class="navigation__list-item">
     <nuxt-link
-      :to="{ name: item.name.toLowerCase() }"
-      class="navigation__list-item-link"
+      :to="item.name.trim().toLowerCase()"
+      :class="{
+        'navigation__list-item-link': true,
+        'navigation__list-item-link navigation__list-item-link--active':
+          $nuxt.$route.path.includes(item.name.trim().toLowerCase()),
+      }"
     >
       <div class="navigation__list-item-top">
         <img :src="item.linkImg" alt="link icon" />
@@ -21,8 +25,9 @@ import { MenuItem } from "~/interfaces";
 export default Vue.extend({
   props: {
     item: {
-      type: {} as PropType<MenuItem>,
+      type: Object as PropType<MenuItem>,
       required: true,
+      default: {},
     },
   },
 });
@@ -99,6 +104,28 @@ export default Vue.extend({
         #{$item}-bottom {
           background: $purple;
           color: #fff;
+        }
+      }
+
+      &--active {
+        #{$item}-top {
+          border-color: $purple-light;
+        }
+
+        #{$item}-bottom {
+          background: $purple;
+          color: #fff;
+        }
+
+        &:hover {
+          #{$item}-top {
+            border-color: $purple-light;
+          }
+
+          #{$item}-bottom {
+            background: $purple;
+            color: #fff;
+          }
         }
       }
     }

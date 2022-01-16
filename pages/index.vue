@@ -22,10 +22,10 @@ export default Vue.extend({
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
-    left: 0;
+    right: -40%;
+    transform: translateX(-50%);
     bottom: 0;
-    width: 96%;
+    width: 87%;
     height: 96%;
     background: #fbe0dc;
     border-radius: 20px;
@@ -34,7 +34,7 @@ export default Vue.extend({
 
   &__img {
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
 }
 </style>
