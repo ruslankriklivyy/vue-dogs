@@ -54,6 +54,7 @@ export default Vue.extend({
 
     #{$self}__btn {
       button {
+        background: rgba(255, 134, 142, 0.2);
         span {
           margin-left: 0;
         }
@@ -77,7 +78,7 @@ export default Vue.extend({
     button {
       width: 44px;
       height: 24px;
-      background: $purple-light;
+      background: $light-purple;
       border-radius: 50px;
       border: none;
       transition: all 0.2s ease;

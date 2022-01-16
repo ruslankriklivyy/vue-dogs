@@ -92,13 +92,13 @@ export default Vue.extend({
         }
 
         #{$item}-bottom {
-          background: $purple-light;
+          background: $light-purple;
         }
       }
 
       &:active {
         #{$item}-top {
-          border-color: $purple-light;
+          border-color: $light-purple;
         }
 
         #{$item}-bottom {
@@ -109,7 +109,7 @@ export default Vue.extend({
 
       &--active {
         #{$item}-top {
-          border-color: $purple-light;
+          border-color: $light-purple;
         }
 
         #{$item}-bottom {
@@ -119,7 +119,7 @@ export default Vue.extend({
 
         &:hover {
           #{$item}-top {
-            border-color: $purple-light;
+            border-color: $light-purple;
           }
 
           #{$item}-bottom {
