@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <input-search />
+  <div class="main__content">
+    <div class="top-bar">
+      <input-search />
+    </div>
   </div>
 </template>
 
@@ -13,4 +15,10 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+</style>

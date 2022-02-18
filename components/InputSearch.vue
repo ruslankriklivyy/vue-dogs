@@ -50,7 +50,7 @@ export default Vue.extend({});
   button {
     position: absolute;
     top: 50%;
-    right: 6px;
+    right: 10px;
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
