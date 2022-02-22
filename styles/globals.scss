@@ -1,3 +1,5 @@
+@import "~/styles/colors.scss";
+
 html,
 body,
 div,
@@ -113,6 +115,23 @@ body {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dfdede;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba($color: $purple, $alpha: 0.7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $purple;
+}
+
 .dark {
   background: #1d1d1d;
 
@@ -153,7 +172,7 @@ table {
 }
 
 .container {
-  max-width: 1250px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
@@ -161,4 +180,24 @@ table {
 
 .main__content {
   padding-top: 25px;
+}
+
+.white-box {
+  margin-top: 20px;
+  padding: 20px;
+  padding-bottom: 0;
+  background: #ffffff;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  &__head {
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    height: calc(100vh - 145px);
+    padding-right: 10px;
+    overflow: auto;
+  }
 }

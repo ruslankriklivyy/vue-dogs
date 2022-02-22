@@ -3,16 +3,21 @@
     <div class="top-bar">
       <input-search />
     </div>
+    <div class="white-box">
+      <div class="white-box__head">
+        <!-- <main-button>Back</main-button> -->
+      </div>
+      <div class="white-box__content">
+        <dogs />
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import InputSearch from "~/components/InputSearch.vue";
 
-export default Vue.extend({
-  components: { InputSearch },
-});
+export default Vue.extend({});
 </script>
 
 <style lang="scss" scoped>
