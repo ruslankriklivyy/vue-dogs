@@ -6,8 +6,8 @@
     }"
   >
     <div class="toggle-theme__circle">
-      <img v-if="!isDarkMode" src="/eye.svg" alt="eye" />
-      <img v-if="isDarkMode" src="/closed-eye.svg" alt="closed eye" />
+      <img v-if="!isDarkMode" src="eye.svg" alt="eye" />
+      <img v-if="isDarkMode" src="closed-eye.svg" alt="closed eye" />
     </div>
     <div class="toggle-theme__btn">
       <button @click="toggleDarkMode"><span></span></button>

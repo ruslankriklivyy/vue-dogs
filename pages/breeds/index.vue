@@ -5,7 +5,7 @@
     </div>
     <div class="white-box">
       <div class="white-box__head">
-        <!-- <main-button>Back</main-button> -->
+        <main-select isGray />
       </div>
       <div class="white-box__content">
         <dogs />
